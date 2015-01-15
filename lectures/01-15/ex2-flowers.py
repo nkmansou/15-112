@@ -18,3 +18,4 @@ def flower():
         left(30)
 
 flower()
+done()

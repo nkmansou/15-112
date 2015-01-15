@@ -18,3 +18,4 @@ def flower(nbpetals,petalsize):
         left(360/nbpetals)
 
 flower(25,60)
+done()
