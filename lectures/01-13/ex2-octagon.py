@@ -1,12 +1,12 @@
 from turtle import *
 
-# problem: draw an octogon
+# problem: draw an octagon
 
-# my solution: I draw one face of the octogon and then turn 45 dregree on the left.
+# my solution: I draw one face of the octagon and then turn 45 dregree on the left.
 # I repeat this operation 8 times.
-# The octogon will be drawn anticlockwise
+# The octagon will be drawn anticlockwise
 
-# # This is an octogon
+# # This is an octagon
 # forward(100)
 # left(45)
 # forward(100)
@@ -24,7 +24,7 @@ from turtle import *
 # forward(100)
 # left(45)
 
-# This is an octogon (using a loop)
+# This is an octagon (using a loop)
 for n in range(8):
    forward(100)
    left(45)
