@@ -75,7 +75,7 @@ def amIFrontWall():
     case2 = (y == 300) and (h == 90)
     case3 = (x == 0) and (h == 180)
     case4 = (y == 0) and (h == 270)
-    return not(amIFrontDoor) and (case1 or case2 or case3 or case4)
+    return not(amIFrontDoor) or case1 or case2 or case3 or case4
 
 def step(n):
     forward(n*10)
