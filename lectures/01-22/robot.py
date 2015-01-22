@@ -34,21 +34,21 @@ def drawRoom():
     left(90)
     forward(300)
     left(90)
-    
+
 def crash(s):
-    write("crash: " + s) 
+    write("crash: " + s)
     exitonclick()
     exit(0)
-    
+
 def victory():
     write("victory")
     exitonclick()
     exit(0)
-    
+
 def amIFrontDoor():
     x,y,h = getPosition()
     return (x == 300) and (y == 210) and (h == 0)
-    
+
 def openDoor():
     global door
     if not(amIFrontDoor()):
@@ -68,15 +68,15 @@ def openDoor():
     left(180)
     pencolor("black")
     door = True
-    
+
 def amIFrontWall():
     x,y,h = getPosition()
     case1 = (x == 300) and (h == 0)
     case2 = (y == 300) and (h == 90)
     case3 = (x == 0) and (h == 180)
     case4 = (y == 0) and (h == 270)
-    return not(amIFrontDoor) or case1 or case2 or case3 or case4 
-    
+    return not(amIFrontDoor) and (case1 or case2 or case3 or case4)
+
 def step(n):
     forward(n*10)
     x,y,h = getPosition()
@@ -97,7 +97,7 @@ def problem2():
    penup()
    setposition(randint(0,30)*10,210)
    pendown()
-    
+
 def problem3():
   drawRoom()
   penup()
@@ -110,5 +110,4 @@ def problem4():
     setposition(randint(0,30)*10,randint(0,30)*10)
     setheading(randint(0,3)*90)
     pendown()
-    
-    
+
