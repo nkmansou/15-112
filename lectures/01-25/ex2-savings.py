@@ -4,10 +4,9 @@
 amount = 100000
 interest = 2.5
 
-# calculate interest
-# ########
-# Your code goes here
-# ########
+# calculate interests
+for i in range(5):
+    amount = amount * 1.025
 
 # display the result
 print "Result is: ", amount

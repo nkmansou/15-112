@@ -5,9 +5,12 @@ someone = "Thierry"
 score = 1653
 
 # calculate the grade
-# ########
-# Your code goes here
-# ########
+if score > (1800*60/100):
+    result = " passes the course"
+else:
+    result = " fails the course"
+
+result = someone + result
 
 # display the result
 print "Result is: ", result
