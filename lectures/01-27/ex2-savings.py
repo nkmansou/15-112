@@ -2,6 +2,18 @@
 
 ##### Functions #####
 
+def calculateCompoundInterest(amount,interest,years, bonus):
+    for i in range(years):
+        amount = amount * (1 + interest/100.0)
+    if bonus:
+        amount = amount + 5000 * (years/5)
+    return amount
 
 ##### My tests #####
+
+amount = calculateCompoundInterest(10000,3,8,True)
+print "Your revenue is " + str(amount)
+print calculateCompoundInterest(2023,7.6, 5, False)
+print calculateCompoundInterest(10,0.5,20, False)
+print calculateCompoundInterest(7893548,3,16, True)
 

@@ -7,26 +7,15 @@
 ##### Functions #####
 
 def calculateGrade(grade):
-    if grade > (1800*60/100):
-        res = " passes the course"
-    else:
-        res = " fails the course"
-    return res
+    percent = grade / 1700.0 * 100
+    return "Your percentage is " + str(percent) + "%"
 
 ##### My tests #####
 
 # input data
 
 person1 = "Thierry"
-grade1 = 800
-
-person2 = "Mohammed"
-grade2 = 1702
+grade1 = 1600
 
 # calculate the grades
-resultOfGrade1 = calculateGrade(grade1)
-resultOfGrade2 = calculateGrade(grade2)
-result = person1 + resultOfGrade1 + " and " + person2 + resultOfGrade2
-
-# display the result
-print "Result is ", result
+print calculateGrade(grade1)

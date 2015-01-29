@@ -5,12 +5,14 @@ someone = "Thierry"
 score = 1653
 
 # calculate the grade
-if score > (1800*60/100):
-    result = " passes the course"
+if score > (1700*60/100):
+    result = " passes the course "
 else:
-    result = " fails the course"
+    result = " fails the course "
 
-result = someone + result
+result = someone + result + str(score)
 
 # display the result
 print "Result is: ", result
+
+print (score > (1700*60/100))
