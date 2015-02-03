@@ -1,14 +1,14 @@
 mytext = "Qatar 2022!"
 
 ##### string slicing #####
- 
+
 result = mytext[2]
 
 # prints "t"
 print "The result is :", result
 
 ##### more slicing #####
- 
+
 result = mytext[0:5]
 
 # prints "Qatar"
@@ -28,7 +28,7 @@ result = mytext[len(mytext)-1]
 # prints "!"
 print "The result is :", result
 
-# however, python has a predefined instruction to return the last character 
+# however, python has a predefined instruction to return the last character
 
 result = mytext[-1]
 
@@ -61,9 +61,8 @@ print "The result is :", result
 
 result = ("World  Cup" in "Qatar is organizing the 2022 World Cup")
 
-# prints False because there are only space between "World" and  "Cup" 
+# prints False because there are only space between "World" and  "Cup"
 print "The result is :", result
-
 
 #### Non-mutabillty ####
 # strings are non mutable which means that you cannot modify them
@@ -80,10 +79,10 @@ result = "Q" + text[1:len(text)]
 
 # prints "Qatar"
 print "The result is :", result
-  
 
 
 
- 
-    
+
+
+
 
