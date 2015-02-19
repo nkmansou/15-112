@@ -28,6 +28,17 @@ for i in words:
 others = ["how","are","you"]
 print (words + others)
 
+# check if an element is inside a list
+
+print (9 in numbers)
+print (91 in numbers)
+
+def inside(n,l):
+    for i in l:
+        if i == l:
+            return True
+    return False
+
 # remove an element from the list
 
 words.remove("world")
@@ -35,9 +46,10 @@ print words
 
 # add an element to the end of the list
 
-
 words.append("you")
 print words
+
+
 
 
 

@@ -5,6 +5,7 @@
 def sellerRevenue(record, months, sellers, name):
    return 0
 
+
 # Q2: Who is the best seller?
 # Good solution: write a function that does not take any argument
 # and returns the name of the best seller
@@ -17,7 +18,7 @@ def bestSeller(record, months, sellers):
 # and returns the revenue for this month
 
 def monthRevenue(record, months, sellers, month):
-    return 0
+    return ""
 
 # Q4: when was the best month?
 # Good solution: write a function that does not take any argument
@@ -34,12 +35,13 @@ def bestMonth(record, months, sellers):
 def total(record, months, sellers):
     return 0
 
-
 ##### Data #####
 
-tab = [[ 456 , 235 , 987 , 673 , 776 , 427 ], [ 856 , 284 , 413 , 987 , 629 , 196 ], [ 198 , 936 , 648 , 925 , 435 , 662 ], [174 , 816 , 367 , 357 , 856 , 1045 ]]
+record = [[0,0,0,0,0,0],[ 456 , 235 , 987 , 673 , 776 , 427], [ 856 , 284 , 413 , 987 , 629 , 196,0 ], [ 198 , 936 , 648 , 925 , 435 , 662,0 ], [174 , 816 , 367 , 357 , 856 , 1045 ]]
 
 months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
-sellers = ["Fahad", "Emad", "Mariam", "Sarah"]
+sellers = ["tsans","Fahad", "Emad", "Mariam", "Sarah"]
 
-print sellerRevenue(tab, months, sellers, "Fahad")
+# print sellerRevenue(record, months, sellers, "Fahad")
+
+print monthRevenue(record, months, sellers,"Apr")
