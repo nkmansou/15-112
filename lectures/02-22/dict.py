@@ -34,8 +34,6 @@ for key in exercise:
 for key in exercise:
     print key + ": " + str(exercise[key])
 
-# another way to iterate through both key and values:
-for key,value in exercise.iteritems():
-    print key + ": " + str(value)
+
 
 
