@@ -1,0 +1,13 @@
+15-112 Fundamentals of Programming and Computer Science
+
+A technical introduction to the fundamentals of programming with an emphasis on producing clear, robust, and reasonably efficient code using top-down design, informal analysis, and effective testing and debugging. Starting from first principles, we will cover a large subset of the Python programming language, including its standard libraries and programming paradigms. We will also target numerous deployment scenarios, including standalone programs, shell scripts, and web-based applications. This course assumes no prior programming experience. Even so, it is a fast-paced and rigorous preparation for 15-122. Students seeking a more gentle introduction to computer science should consider first taking 15-110.
+
+Instructor: Thierry Sans
+Lectures: Sunday, Tuesday, Thursday 1:30-2:50PM room 2035
+
+Objectives
+
+Students completing this course will be well positioned to:
+1) Discuss the major aspects of a computer program and how computers solve problems.
+2) Implement small programs to solve well-defined and rather simple problems.
+3) Able to develop programming and computer science skills based on these materials and prepare for taking 15-122 Principles of Imperative Computation.
