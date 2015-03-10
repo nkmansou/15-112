@@ -1,4 +1,5 @@
 import os
+import re
 
 # the function clean takes a string and removes the punctuation, normalize whitespaces, removes tabulations and linebreaks and converts all letters to lowercase.
 def clean(s):
@@ -15,8 +16,7 @@ def clean(s):
     # keep letters and space only
     letters = sets.Set(string.ascii_lowercase)
     s = ''.join( [ i for i in s if i in letters or i == " "])
-    return s
-
+    return re.sub(r'[^\x00-\x7F]',' ', s)
 
 # read the file input_file.txt
 file = open(os.path.dirname(os.path.realpath(__file__)) + "/input_file.txt")
